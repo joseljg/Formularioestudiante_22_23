@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <TextView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/txt_item_lista_cursos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ITEM"
+        android:textColor="#F44336"
+        android:textSize="34sp"
+        />
