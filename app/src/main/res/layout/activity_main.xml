@@ -61,6 +61,53 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edt_nombre" />
 
+    <EditText
+        android:id="@+id/edt_fechan"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:hint="Fecha de Nacimiento"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:onClick="mostrar_calendario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sp_lista_cursos" />
+
+    <EditText
+        android:id="@+id/edt_hora"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:focusableInTouchMode="false"
+        android:hint="Hora preferida de reunion"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        android:onClick="mostrar_hora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_fechan" />
+
+    <CheckBox
+        android:id="@+id/ck_acepto"
+        android:layout_width="364dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="16dp"
+        android:text="Acepto las condiciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_hora" />
+
     <Button
         android:id="@+id/bt_enviar"
         android:layout_width="wrap_content"
@@ -68,6 +115,7 @@
         android:layout_marginEnd="48dp"
         android:layout_marginBottom="32dp"
         android:text="Enviar"
+        android:onClick="enviar_estudiante"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -80,22 +128,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/estudiante" />
-
-    <EditText
-        android:id="@+id/edt_fechan"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="16dp"
-        android:ems="10"
-        android:hint="Fecha de Nacimiento"
-        android:inputType="textPersonName"
-        android:minHeight="48dp"
-        android:onClick="mostrar_calendario"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/sp_lista_cursos" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
