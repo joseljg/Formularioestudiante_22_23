@@ -1,9 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ly_horizontal1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Activity2">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <ImageView
+        android:id="@+id/img_estudiante"
+        android:layout_width="280dp"
+        android:layout_height="280dp"
+        android:layout_weight="1"
+        android:padding="16dp"
+        app:srcCompat="@drawable/estudiante" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_dni_estudiante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#2DEDDC43"
+                android:padding="16dp"
+                android:text="DNI"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/txt_curso"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#2DEDDC43"
+                android:padding="16dp"
+                android:text="CURSO"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/txt_hora_estudiante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#2DEDDC43"
+                android:padding="16dp"
+                android:text="HORA"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/txt_fecha_estudiante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#2DEDDC43"
+                android:padding="16dp"
+                android:text="FECHA"
+                android:textSize="34sp" />
+
+            <TextView
+                android:id="@+id/txt_nombre_estudiante"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="#2DEDDC43"
+                android:padding="16dp"
+                android:text="NOMBRE"
+                android:textSize="34sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
